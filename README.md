@@ -42,7 +42,7 @@ The exploit has been only tested on Windows but should also be working on Linux 
 
 ### Overview of the vulnerability
 
-Paracosme exploits a use-after-free issue found in the [GenBroker64](https://docs.iconics.com/V10.96.2/GENESIS64/Help/Apps/WBDT/FrameWorX/GenBroker64_Settings.htm) process to achieve remote code execution on a Windows 21H2 x64 system. For the interested readers, you can also find the [GenBroker64.exe](bin/GenBroker64.exe) binary in the [bin/](bin/) folder.
+Paracosme exploits a use-after-free issue found in the [GenBroker64](https://docs.iconics.com/V10.96.2/GENESIS64/Help/Apps/WBDT/FrameWorX/GenBroker64_Settings.htm) process to achieve remote code execution on a Windows 21H2 x64 system.
 
 At a high level, the GenBroker64 process listens on the TCP port 38080 and is able to deserialize various packets after a handshake has been done with a client. The isue I found is in the code that handles reading a [VARIANT](https://docs.microsoft.com/en-us/windows/win32/api/oaidl/ns-oaidl-variant) from the network socket. Basically a variant is a type and a value. The function seems well-written at first sight, and takes efforts to only unpacks certain types. This is how it looks like:
 
