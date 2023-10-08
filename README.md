@@ -5,7 +5,7 @@ Paracosme is a memory corruption exploit I wrote to target the [Genesis64](https
 <img src='pics/p2o.png'>
 </p>
 
-The exploit was demonstrated during the [Pwn2Own 2022 Miami](https://www.zerodayinitiative.com/blog/2021/10/22/our-ics-themed-pwn2own-contest-returns-to-miami-in-2022) contest that took place at the [S4x22 Conference](https://s4xevents.com/).
+The exploit was demonstrated during the [Pwn2Own 2022 Miami](https://www.zerodayinitiative.com/blog/2021/10/22/our-ics-themed-pwn2own-contest-returns-to-miami-in-2022) contest that took place at the [S4x22 Conference](https://s4xevents.com/). You can read about it in [Competing in Pwn2Own ICS 2022 Miami: Exploiting a zero click remote memory corruption in ICONICS Genesis64](https://doar-e.github.io/blog/2023/05/05/competing-in-pwn2own-ics-2022-miami-exploiting-a-zero-click-remote-memory-corruption-in-iconics-genesis64/).
 
 <p align='center'>
 <img src='pics/paracosme.gif'>
@@ -39,6 +39,8 @@ The exploit has been only tested on Windows but should also be working on Linux 
 </p>
 
 ## The exploit
+
+For more details, please refer to [Competing in Pwn2Own ICS 2022 Miami: Exploiting a zero click remote memory corruption in ICONICS Genesis64](https://doar-e.github.io/blog/2023/05/05/competing-in-pwn2own-ics-2022-miami-exploiting-a-zero-click-remote-memory-corruption-in-iconics-genesis64/).
 
 ### Overview of the vulnerability
 
